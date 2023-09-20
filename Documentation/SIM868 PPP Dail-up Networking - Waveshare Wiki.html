@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://www.waveshare.com/wiki/SIM868_PPP_Dail-up_Networking -->
+<html class="client-js" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>SIM868 PPP Dail-up Networking - Waveshare Wiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"1dd58868346e53dfc696f738","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"SIM868_PPP_Dail-up_Networking","wgTitle":"SIM868 PPP Dail-up Networking","wgCurRevisionId":69105,"wgRevisionId":69105,"wgArticleId":4466,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"SIM868_PPP_Dail-up_Networking","wgRelevantArticleId":4466,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,
+"wgMediaViewerEnabledByDefault":!0};RLSTATE={"ext.gadget.tabber":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.tweeki.styles":"ready","skins.tweeki.bootstraptheme.styles":"ready","skins.tweeki.externallinks.styles":"ready","skins.tweeki.awesome.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","mmv.head","mmv.bootstrap.autostart","ext.HighlightjsIntegration","skins.tweeki.messages","skins.tweeki.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="./SIM868 PPP Dail-up Networking - Waveshare Wiki_files/aAdkk0o.php">
+<script async="" src="./SIM868 PPP Dail-up Networking - Waveshare Wiki_files/aAdkk0o(1).php"></script>
+<style>
+.mw-ui-button{background-color:#f8f9fa;color:#202122;display:inline-block;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;min-width:4em;max-width:28.75em;margin:0;padding:6px 12px;border:1px solid #a2a9b1;border-radius:2px;cursor:pointer;vertical-align:middle;font-family:inherit;font-size:1em;font-weight:bold;line-height:1.28571429em;text-align:center;-webkit-appearance:none}.mw-ui-button:visited{color:#202122}.mw-ui-button:hover{background-color:#ffffff;color:#404244;border-color:#a2a9b1}.mw-ui-button:focus{background-color:#ffffff;color:#202122;border-color:#3366cc;box-shadow:inset 0 0 0 1px #3366cc,inset 0 0 0 2px #ffffff;outline-width:0}.mw-ui-button:focus::-moz-focus-inner{border-color:transparent;padding:0}.mw-ui-button:active,.mw-ui-button.is-on{background-color:#c8ccd1;color:#000000;border-color:#72777d;box-shadow:none}.mw-ui-button:disabled{background-color:#c8ccd1;color:#ffffff;border-color:#c8ccd1;cursor:default}.mw-ui-button:disabled:hover,.mw-ui-button:disabled:active{background-color:#c8ccd1;color:#ffffff;box-shadow:none;border-color:#c8ccd1}.mw-ui-button:not(:disabled){-webkit-transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms;-moz-transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms;transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms}.mw-ui-button.mw-ui-quiet,.mw-ui-button.mw-ui-quiet.mw-ui-progressive,.mw-ui-button.mw-ui-quiet.mw-ui-destructive{background-color:transparent;color:#202122;border-color:transparent}.mw-ui-button.mw-ui-quiet:hover,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:hover,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:hover{background-color:transparent;color:#404244;border-color:transparent;box-shadow:none}.mw-ui-button.mw-ui-quiet:active,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:active,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:active{background-color:transparent;color:#000000;border-color:transparent}.mw-ui-button.mw-ui-quiet:focus,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:focus,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:focus{background-color:transparent;color:#202122;border-color:transparent;box-shadow:none}.mw-ui-button.mw-ui-quiet:disabled,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:disabled,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:disabled,.mw-ui-button.mw-ui-quiet:disabled:hover,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:disabled:hover,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:disabled:hover,.mw-ui-button.mw-ui-quiet:disabled:active,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:disabled:active,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:disabled:active{background-color:transparent;color:#72777d;border-color:transparent}.mw-ui-button.mw-ui-progressive{background-color:#3366cc;color:#fff;border:1px solid #3366cc}.mw-ui-button.mw-ui-progressive:hover{background-color:#447ff5;border-color:#447ff5}.mw-ui-button.mw-ui-progressive:focus{box-shadow:inset 0 0 0 1px #3366cc,inset 0 0 0 2px #ffffff}.mw-ui-button.mw-ui-progressive:active,.mw-ui-button.mw-ui-progressive.is-on{background-color:#2a4b8d;border-color:#2a4b8d;box-shadow:none}.mw-ui-button.mw-ui-progressive:disabled{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1}.mw-ui-button.mw-ui-progressive:disabled:hover,.mw-ui-button.mw-ui-progressive:disabled:active{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1;box-shadow:none}.mw-ui-button.mw-ui-progressive.mw-ui-quiet{color:#3366cc}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:hover{background-color:transparent;color:#447ff5}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:active{color:#2a4b8d}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:focus{background-color:transparent;color:#3366cc}.mw-ui-button.mw-ui-destructive{background-color:#dd3333;color:#fff;border:1px solid #dd3333}.mw-ui-button.mw-ui-destructive:hover{background-color:#ff4242;border-color:#ff4242}.mw-ui-button.mw-ui-destructive:focus{box-shadow:inset 0 0 0 1px #dd3333,inset 0 0 0 2px #ffffff}.mw-ui-button.mw-ui-destructive:active,.mw-ui-button.mw-ui-destructive.is-on{background-color:#b32424;border-color:#b32424;box-shadow:none}.mw-ui-button.mw-ui-destructive:disabled{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1}.mw-ui-button.mw-ui-destructive:disabled:hover,.mw-ui-button.mw-ui-destructive:disabled:active{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1;box-shadow:none}.mw-ui-button.mw-ui-destructive.mw-ui-quiet{color:#dd3333}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:hover{background-color:transparent;color:#ff4242}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:active{color:#b32424}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:focus{background-color:transparent;color:#dd3333}.mw-ui-button.mw-ui-big{font-size:1.3em}.mw-ui-button.mw-ui-block{display:block;width:100%;margin-left:auto;margin-right:auto}input.mw-ui-button::-moz-focus-inner,button.mw-ui-button::-moz-focus-inner{margin-top:-1px;margin-bottom:-1px}a.mw-ui-button{text-decoration:none}a.mw-ui-button:hover,a.mw-ui-button:focus{text-decoration:none}.mw-ui-button-group > *{min-width:48px;border-radius:0;float:left}.mw-ui-button-group > *:first-child{border-top-left-radius:2px;border-bottom-left-radius:2px}.mw-ui-button-group > *:not(:first-child){border-left:0}.mw-ui-button-group > *:last-child{border-top-right-radius:2px;border-bottom-right-radius:2px}.mw-ui-button-group .is-on .button{cursor:default}
+.mw-ui-icon{position:relative;line-height:1.5em;min-height:1.5em;min-width:1.5em}span.mw-ui-icon{display:inline-block}.mw-ui-icon.mw-ui-icon-element{text-indent:-999px;overflow:hidden;width:3.5em;min-width:3.5em;max-width:3.5em}.mw-ui-icon.mw-ui-icon-element:before{left:0;right:0;position:absolute;margin:0 1em}.mw-ui-icon.mw-ui-icon-element.mw-ui-icon-large{width:4.625em;min-width:4.625em;max-width:4.625em;line-height:4.625em;min-height:4.625em}.mw-ui-icon.mw-ui-icon-element.mw-ui-icon-large:before{min-height:4.625em}.mw-ui-icon.mw-ui-icon-before:before,.mw-ui-icon.mw-ui-icon-element:before{background-position:50% 50%;background-repeat:no-repeat;background-size:100% auto;float:left;display:block;min-height:1.5em;content:''}.mw-ui-icon.mw-ui-icon-before:before{position:relative;width:1.5em;margin-right:1em}.mw-ui-icon.mw-ui-icon-small:before{background-size:66.67% auto}
+pre.code2highlight,pre.nohighlight{  padding:0.5em}code.code2highlight.hljs{  padding:1px 4px}.hljs{display:block;overflow-x:auto;padding:0.5em;background:#1E1E1E;color:#DCDCDC}.hljs-keyword,.hljs-literal,.hljs-symbol,.hljs-name{color:#569CD6}.hljs-link{color:#569CD6;text-decoration:underline}.hljs-built_in,.hljs-type{color:#4EC9B0}.hljs-number,.hljs-class{color:#B8D7A3}.hljs-string,.hljs-meta-string{color:#D69D85}.hljs-regexp,.hljs-template-tag{color:#9A5334}.hljs-subst,.hljs-function,.hljs-title,.hljs-params,.hljs-formula{color:#DCDCDC}.hljs-comment,.hljs-quote{color:#57A64A;font-style:italic}.hljs-doctag{color:#608B4E}.hljs-meta,.hljs-meta-keyword,.hljs-tag{color:#9B9B9B}.hljs-variable,.hljs-template-variable{color:#BD63C5}.hljs-attr,.hljs-attribute,.hljs-builtin-name{color:#9CDCFE}.hljs-section{color:gold}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:bold}.hljs-bullet,.hljs-selector-tag,.hljs-selector-id,.hljs-selector-class,.hljs-selector-attr,.hljs-selector-pseudo{color:#D7BA7D}.hljs-addition{background-color:#144212;display:inline-block;width:100%}.hljs-deletion{background-color:#600;display:inline-block;width:100%}</style><style>
+.mw-mmv-overlay{position:fixed;top:0;left:0;right:0;bottom:0;z-index:1000;background-color:#000}body.mw-mmv-lightbox-open{overflow-y:auto;  }body.mw-mmv-lightbox-open #mw-page-base,body.mw-mmv-lightbox-open #mw-head-base,body.mw-mmv-lightbox-open #mw-navigation,body.mw-mmv-lightbox-open #content,body.mw-mmv-lightbox-open #footer,body.mw-mmv-lightbox-open #globalWrapper{ display:none}body.mw-mmv-lightbox-open > *{ display:none}body.mw-mmv-lightbox-open > .mw-mmv-overlay,body.mw-mmv-lightbox-open > .mw-mmv-wrapper{display:block}.mw-mmv-filepage-buttons{margin-top:5px}.mw-mmv-filepage-buttons .mw-mmv-view-expanded,.mw-mmv-filepage-buttons .mw-mmv-view-config{display:block;line-height:inherit}.mw-mmv-filepage-buttons .mw-mmv-view-expanded.mw-ui-icon:before{background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1024 768%22%3E %3Cpath d=%22M851.2 71.6L690.7 232.1l-40.1-40.3-9.6 164.8 164.8-9.3-40.3-40.4L926 146.4l58.5 58.5L997.6 0 792.7 13.1%22/%3E %3Cpath d=%22M769.6 89.3H611.9l70.9 70.8 7.9 7.5m-47.1 234.6l-51.2 3 3-51.2 9.4-164.4 5.8-100.3H26.4V768h883.1V387l-100.9 5.8-165 9.4zM813.9 678H113.6l207.2-270.2 31.5-12.9L548 599.8l105.9-63.2 159.8 140.8.2.6zm95.6-291.9V228l-79.1 78.9 7.8 7.9%22/%3E %3C/svg%3E")}.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before{background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1024 768%22%3E %3Cpath d=%22M897 454.6V313.4L810.4 299c-6.4-23.3-16-45.7-27.3-65.8l50.5-71.4-99.4-100.2-71.4 50.5c-20.9-11.2-42.5-20.9-65.8-27.3L582.6-1H441.4L427 85.6c-23.3 6.4-45.7 16-65.8 27.3l-71.4-50.5-100.3 99.5 50.5 71.4c-11.2 20.9-20.9 42.5-27.3 66.6L127 313.4v141.2l85.8 14.4c6.4 23.3 16 45.7 27.3 66.6L189.6 607l99.5 99.5 71.4-50.5c20.9 11.2 42.5 20.9 66.6 27.3l14.4 85.8h141.2l14.4-86.6c23.3-6.4 45.7-16 65.8-27.3l71.4 50.5 99.5-99.5-50.5-71.4c11.2-20.9 20.9-42.5 27.3-66.6l86.4-13.6zm-385 77c-81.8 0-147.6-66.6-147.6-147.6 0-81.8 66.6-147.6 147.6-147.6S659.6 302.2 659.6 384 593.8 531.6 512 531.6z%22/%3E %3C/svg%3E");opacity:0.75}.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before:hover{opacity:1}.mw-mmv-button{background-color:transparent;min-width:0;border:0;padding:0;overflow-x:hidden;text-indent:-9999em}</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="./SIM868 PPP Dail-up Networking - Waveshare Wiki_files/aAdkk0o(2).php">
+<link rel="stylesheet" href="./SIM868 PPP Dail-up Networking - Waveshare Wiki_files/aAdkk0o(3).php">
+<meta name="generator" content="MediaWiki 1.35.5">
+<meta property="og:image" content="https://www.waveshare.com/w/upload/a/ab/SIM868_PPP_2.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="https://www.waveshare.com/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.waveshare.com/w/opensearch_desc.php" title="Waveshare Wiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://www.waveshare.com/w/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="Waveshare Wiki Atom feed" href="https://www.waveshare.com/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-SIM868_PPP_Dail-up_Networking rootpage-SIM868_PPP_Dail-up_Networking skin-tweeki action-view tweeki-animateLayout tweeki-non-advanced tweeki-user-anon" style="margin-bottom: 0px;">			<!-- navbar -->
+			<div id="mw-navigation" class="navbar navbar-default navbar-fixed-top navbar-expand-lg fixed-top navbar-light bg-light" role="navigation">
+				<h2>Navigation menu</h2>
+				<div id="mw-head" class="navbar-inner">
+					<div class="container">
+
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<a href="https://www.waveshare.com/wiki/Main_Page" class="navbar-brand"><img src="./SIM868 PPP Dail-up Networking - Waveshare Wiki_files/Ws-watermark-en.svg" alt="Waveshare Wiki"></a>
+						</div>
+
+						<div id="navbar" class="navbar-collapse collapse">
+													<ul class="nav navbar-nav">
+							<li class="nav"><a href="https://www.waveshare.com/wiki/SIM868_PPP_Dail-up_Networking#" id="n-raspberry-pi" class="dropdown-toggle" data-toggle="dropdown">Raspberry Pi <b class="caret"></b></a><ul class="dropdown-menu " role="menu"><li id="n-main_page.2523rpi-boards"><a href="https://www.waveshare.com/wiki/Main_Page#RPi-Boards" tabindex="-1">Boards/Kits</a></li><li id="n-main_page.2523rpi-displays"><a href="https://www.waveshare.com/wiki/Main_Page#RPi-Displays" tabindex="-1">Displays</a></li><li id="n-main_page.2523rpi-cameras"><a href="https://www.waveshare.com/wiki/Main_Page#RPi-Cameras" tabindex="-1">Cameras</a></li><li id="n-main_page.2523rpi-expansions"><a href="https://www.waveshare.com/wiki/Main_Page#RPi-Expansions" tabindex="-1">Expansions</a></li><li id="n-main_page.2523rpi-laptops"><a href="https://www.waveshare.com/wiki/Main_Page#RPi-Laptops" tabindex="-1">All-in-one</a></li><li id="n-main_page.2523rpi-robots"><a href="https://www.waveshare.com/wiki/Main_Page#RPi-Robots" tabindex="-1">Robots</a></li><li id="n-main_page.2523rpi-games"><a href="https://www.waveshare.com/wiki/Main_Page#RPi-Games" tabindex="-1">Portable Gaming</a></li><li id="n-main_page.2523rpi-acces"><a href="https://www.waveshare.com/wiki/Main_Page#RPi-Acces" tabindex="-1">Accessories</a></li><li id="n-main_page.2523android-linux-boards"><a href="https://www.waveshare.com/wiki/Main_Page#Android-Linux-Boards" tabindex="-1">Other Android/Linux Boards</a></li></ul></li><li class="nav"><a href="https://www.waveshare.com/wiki/SIM868_PPP_Dail-up_Networking#" id="n-ai" class="dropdown-toggle" data-toggle="dropdown">AI <b class="caret"></b></a><ul class="dropdown-menu " role="menu"><li id="n-main_page.2523jetson-ai-boards"><a href="https://www.waveshare.com/wiki/Main_Page#Jetson-AI-Boards" tabindex="-1">Boards/Kits</a></li><li id="n-main_page.2523jetson-ai-displays"><a href="https://www.waveshare.com/wiki/Main_Page#Jetson-AI-Displays" tabindex="-1">Displays</a></li><li id="n-main_page.2523jetson-ai-cameras"><a href="https://www.waveshare.com/wiki/Main_Page#Jetson-AI-Cameras" tabindex="-1">Cameras</a></li><li id="n-main_page.2523jetson-ai-hat"><a href="https://www.waveshare.com/wiki/Main_Page#Jetson-AI-HAT" tabindex="-1">Expansions</a></li><li id="n-main_page.2523jetson-ai-robots"><a href="https://www.waveshare.com/wiki/Main_Page#Jetson-AI-Robots" tabindex="-1">Robots</a></li></ul></li><li class="nav"><a href="https://www.waveshare.com/wiki/SIM868_PPP_Dail-up_Networking#" id="n-displays" class="dropdown-toggle" data-toggle="dropdown">Displays <b class="caret"></b></a><ul class="dropdown-menu " role="menu"><li id="n-main_page.2523display-lcd-oleds"><a href="https://www.waveshare.com/wiki/Main_Page#Display-LCD-OLEDs" tabindex="-1">LCD/OLED</a></li><li id="n-main_page.2523display-e-paper"><a href="https://www.waveshare.com/wiki/Main_Page#Display-e-Paper" tabindex="-1">e-Paper</a></li></ul></li><li class="nav"><a href="https://www.waveshare.com/wiki/SIM868_PPP_Dail-up_Networking#" id="n-iot" class="dropdown-toggle" data-toggle="dropdown">IoT <b class="caret"></b></a><ul class="dropdown-menu " role="menu"><li id="n-main_page.2523long-range-wireless-comm"><a href="https://www.waveshare.com/wiki/Main_Page#Long-range-wireless-comm" tabindex="-1">Long Range Wireless</a></li><li id="n-main_page.2523short-range-wireless-comm"><a href="https://www.waveshare.com/wiki/Main_Page#Short-range-wireless-comm" tabindex="-1">Short Range Wireless</a></li><li id="n-main_page.2523wired-communication"><a href="https://www.waveshare.com/wiki/Main_Page#Wired-communication" tabindex="-1">Wired Comm / Converter</a></li><li id="n-main_page.2523misc-cameras-av"><a href="https://www.waveshare.com/wiki/Main_Page#Misc-cameras-av" tabindex="-1">Cameras / Audio / Video</a></li><li id="n-main_page.2523misc-sensor-modules"><a href="https://www.waveshare.com/wiki/Main_Page#Misc-sensor-modules" tabindex="-1">Sensors</a></li><li id="n-main_page.2523misc-servos-motors"><a href="https://www.waveshare.com/wiki/Main_Page#Misc-servos-motors" tabindex="-1">Motors / Servos</a></li><li id="n-main_page.2523misc-other-modules"><a href="https://www.waveshare.com/wiki/Main_Page#Misc-other-modules" tabindex="-1">others</a></li></ul></li><li class="nav"><a href="https://www.waveshare.com/wiki/SIM868_PPP_Dail-up_Networking#" id="n-robotics" class="dropdown-toggle" data-toggle="dropdown">Robotics <b class="caret"></b></a><ul class="dropdown-menu " role="menu"><li id="n-main_page.2523robotics-cars"><a href="https://www.waveshare.com/wiki/Main_Page#Robotics-cars" tabindex="-1">Mobile Robots</a></li><li id="n-main_page.2523dog-like-robots"><a href="https://www.waveshare.com/wiki/Main_Page#Dog-like-Robots" tabindex="-1">Dog-like Robots</a></li><li id="n-main_page.2523robotics-drivers-sensors"><a href="https://www.waveshare.com/wiki/Main_Page#Robotics-drivers-sensors" tabindex="-1">Drivers / Sensors</a></li><li id="n-main_page.2523robotics-robot-arms"><a href="https://www.waveshare.com/wiki/Main_Page#Robotics-robot-arms" tabindex="-1">Robot Arm / Control</a></li></ul></li><li class="nav"><a href="https://www.waveshare.com/wiki/SIM868_PPP_Dail-up_Networking#" id="n-mcu.252Ffpga" class="dropdown-toggle" data-toggle="dropdown">MCU/FPGA <b class="caret"></b></a><ul class="dropdown-menu " role="menu"><li id="n-main_page.2523arduino-main-boards"><a href="https://www.waveshare.com/wiki/Main_Page#Arduino-main-boards" tabindex="-1">Arduino</a></li><li id="n-main_page.2523micro.253Abit"><a href="https://www.waveshare.com/wiki/Main_Page#micro:bit" tabindex="-1">micro:bit</a></li><li id="n-main_page.2523mcu.2farm" class="LPC"><a href="https://www.waveshare.com/wiki/Main_Page#MCU.2FARM" tabindex="-1">STM32</a></li><li id="n-main_page.2523fpga"><a href="https://www.waveshare.com/wiki/Main_Page#FPGA" tabindex="-1">FPGA</a></li></ul></li><li class="nav"><a href="https://support.waveshare.com/hc/en-us/requests/new" id="n-https.253A.252F.252Fsupport.waveshare.com.252Fhc.252Fen-us.252Frequests.252Fnew" rel="nofollow" target="_blank">Support</a></li><li class="nav"><a href="https://www.klayers.net/" id="n-https.253A.252F.252Fwww.klayers.net.252F" rel="nofollow" target="_blank">IC</a></li>							</ul>
+						
+													<ul class="nav navbar-nav navbar-right">
+							</ul>
+				<form class="navbar-form navbar-right" action="https://www.waveshare.com/w/index.php" id="searchform">
+					<div class="form-group"><input type="search" name="search" placeholder="Search" title="Search Waveshare Wiki [alt-shift-f]" accesskey="f" id="searchInput" class="search-query form-control"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="mw-searchButton" class="searchButton btn hidden">
+					</div>
+				</form><ul class="nav navbar-nav navbar-right">							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!-- /navbar -->
+					<div id="mw-page-base"></div>
+			<div id="mw-head-base"></div>
+			<a id="top"></a>
+
+			<!-- content -->
+			<div id="contentwrapper" class="user-loggedout not-editable container with-navbar with-navbar-fixed">
+
+				
+				<div class="row">
+					<div class="col-md-offset-2 col-md-10" role="main">
+								<div class="mw-body" id="content">
+			<div id="mw-js-message" style="display:none;"></div>
+									<h1 id="firstHeading" class="firstHeading page-header" lang="en"><span dir="auto">SIM868 PPP Dail-up Networking</span></h1>
+									<!-- bodyContent -->
+			<div id="bodyContent">
+								<div id="siteSub">From Waveshare Wiki</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="https://www.waveshare.com/wiki/SIM868_PPP_Dail-up_Networking#mw-navigation">navigation</a>, 					<a href="https://www.waveshare.com/wiki/SIM868_PPP_Dail-up_Networking#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>SIM868 module features GPRS function (2G Network), so we could use SIM868 module to dial-up networking using PPP.
+</p><p>As we know, SIM868 module features GPRS function, however, it is controlled with AT instructions, and AT instruction is not convenient in Raspberry Pi. If the function could be operated just like operate WIFI it will be much better. In this case, we describe how to use PPP to dial-up networking.
+</p>
+<ul><li>Fistly, we need to install PPP server</li></ul>
+<pre>sudo apt-get install ppp
+</pre>
+<ul><li>Switch to root permission</li></ul>
+<pre>sudo su
+</pre>
+<ul><li>Enter the directory /etc/ppp/peers, copy the file provider and name it gprs</li></ul>
+<pre>cd /etc/ppp/peers
+cp provider gprs
+</pre>
+<ul><li>Open file gprs and edit it</li></ul>
+<pre>sudo nano gprs
+</pre>
+<p><a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://files.waveshare.com/upload/3/31/Gprs_file_for_SIM868_PPP_Dail-up.zip">gprs file for SIM868 PPP Dail-up</a><br>
+<a href="https://www.waveshare.com/wiki/File:SIM868_PPP_1.jpg" class="image"><img alt="SIM868 PPP 1.jpg" src="./SIM868 PPP Dail-up Networking - Waveshare Wiki_files/SIM868_PPP_1.jpg" decoding="async" loading="lazy" width="650" height="513" srcset="/w/upload/a/a0/SIM868_PPP_1.jpg 1.5x" data-file-width="747" data-file-height="590"></a>
+</p>
+<ul><li>Exeute the command as below to run it in the background</li></ul>
+<pre>pppd call gprs &amp;
+</pre>
+<p><a href="https://www.waveshare.com/wiki/File:SIM868_PPP_2.jpg" class="image"><img alt="SIM868 PPP 2.jpg" src="./SIM868 PPP Dail-up Networking - Waveshare Wiki_files/SIM868_PPP_2.jpg" decoding="async" loading="lazy" width="500" height="512" srcset="/w/upload/a/ab/SIM868_PPP_2.jpg 1.5x" data-file-width="554" data-file-height="567"></a>
+</p>
+<ul><li>Close the network</li></ul>
+<pre>ifconfig eth0 down
+ifconfig wlan0 down
+</pre>
+<pre>route add -net 0.0.0.0 ppp0
+</pre>
+<ul><li>Then execute command ifconfig you can find the ppp0</li></ul>
+<p><a href="https://www.waveshare.com/wiki/File:SIM868_PPP_3.jpg" class="image"><img alt="SIM868 PPP 3.jpg" src="./SIM868 PPP Dail-up Networking - Waveshare Wiki_files/SIM868_PPP_3.jpg" decoding="async" loading="lazy" width="500" height="221" srcset="/w/upload/c/c2/SIM868_PPP_3.jpg 1.5x" data-file-width="554" data-file-height="245"></a>
+</p>
+<ul><li>Finally, just try to ping one web site like google or baidu.com. If you can ping the web site successfully, it means that the setting is correct and it can network now.</li></ul>
+<p><a href="https://www.waveshare.com/wiki/File:SIM868_PPP_4.jpg" class="image"><img alt="SIM868 PPP 4.jpg" src="./SIM868 PPP Dail-up Networking - Waveshare Wiki_files/SIM868_PPP_4.jpg" decoding="async" loading="lazy" width="500" height="192" srcset="/w/upload/9/9b/SIM868_PPP_4.jpg 1.5x" data-file-width="554" data-file-height="213"></a>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20230920055121
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.050 seconds
+Real time usage: 0.062 seconds
+Preprocessor visited node count: 1/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 1/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key waveshareDB:pcache:idhash:4466-0!canonical!groups=* and timestamp 20230920055121 and revision id 69105
+ -->
+</div></div>								<div class="printfooter">
+				Retrieved from "<a dir="ltr" href="https://www.waveshare.com/w/index.php?title=SIM868_PPP_Dail-up_Networking&amp;oldid=69105">https://www.waveshare.com/w/index.php?title=SIM868_PPP_Dail-up_Networking&amp;oldid=69105</a>"				</div>
+												<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>												<div class="visualClear"></div>
+							</div>
+			<!-- /bodyContent -->
+		</div>
+						</div>
+				</div>
+			</div>
+			<!-- /content -->
+
+			<!-- sidebar-left -->
+			<div class="sidebar-wrapper sidebar-left-wrapper">
+				<div class="sidebar-container container">
+					<div class="row">
+						<div id="sidebar-left" class="col-md-2 col-md-offset-0">
+							<div id="tweekiTOC"></div>						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /sidebar-left -->
+					<!-- footer -->
+			<div id="footer" role="contentinfo" class="footer container footer-sticky bg-light" style="margin-top: 0px; opacity: 1;">
+			<ul id="footer-custom"><li class="dropup"><a href="https://www.waveshare.com/w/index.php?title=Special:UserLogin&amp;returnto=SIM868+PPP+Dail-up+Networking" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Login / Create Account</a></li></ul><div style="clear:both"></div>			</div>
+			<!-- /footer -->
+		
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.050","walltime":"0.062","ppvisitednodes":{"value":1,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":1,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20230920055121","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":529});});</script>	
+
+</body></html>
