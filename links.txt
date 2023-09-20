@@ -1,0 +1,5 @@
+Store:
+https://thepihut.com/products/gsm-gprs-gnss-bluetooth-hat-for-raspberry-pi
+
+Documentation:
+https://www.waveshare.com/wiki/GSM/GPRS/GNSS_HAT
