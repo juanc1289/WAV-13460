@@ -6,3 +6,6 @@ sudo rpi-update
 sudo chmod 666 /dev/ttys0
 
 ls -l /dev/t*
+
+AT+CGNSINF
+AT+CGNSPWR=1
