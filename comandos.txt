@@ -7,5 +7,19 @@ sudo chmod 666 /dev/ttys0
 
 ls -l /dev/t*
 
-AT+CGNSINF
+### GPS ###
+AT+CGNSINF 
 AT+CGNSPWR=1
+
+### SMS ###
+####Recibir#####
+AT+CMGF=1: Set SMS to TEXT mode；
+
+AT+CMGR=3 to read the third message
+
+AT+CMGD=3, to delete the message
+
+####Enviar#####
+AT+CMGS="+32477560148”
+
+
