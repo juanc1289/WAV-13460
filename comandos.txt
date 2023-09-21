@@ -7,6 +7,8 @@ sudo chmod 666 /dev/ttys0
 
 ls -l /dev/t*
 
+sudo cat /dev/ttyS0
+
 ### GPS ###
 AT+CGNSINF 
 AT+CGNSPWR=1
