@@ -3,7 +3,7 @@ list all the serial ports available to the system
 dmesg | grep tty
 sudo rpi-update
 
-sudo chmod 666 /dev/ttys0
+sudo chmod 666 /dev/ttyS0
 
 ls -l /dev/t*
 
