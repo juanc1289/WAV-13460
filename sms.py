@@ -3,10 +3,16 @@ import time
 
 phone = serial.Serial("/dev/ttyS0", baudrate=115200, timeout=1.0)
 
-phone.write(b'AT+CGNSPWR=1\r\n')
+message1='AT+CGNSPWR=1\r\n'
+messageutf1= message1.encode(encoding='utf-8', errors = 'strict')
+
+phone.write(messageutf1)
 result=phone.read(100)
 print(result)
 
-phone.write(bytes('AT+CGNSINF\r\n','utf-8'))
+message2='AT+CGNSINF\r\n'
+messageutf2= message2.encode(encoding='utf-8', errors = 'strict')
+
+phone.write(messageutf2)
 result=phone.read(100)
 print(result)
