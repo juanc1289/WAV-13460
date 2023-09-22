@@ -15,7 +15,7 @@ AT+CGNSPWR=1
 
 ### SMS ###
 ####Recibir#####
-AT+CMGF=1: Set SMS to TEXT mode；
+AT+CMGF=1 Set SMS to TEXT mode；
 
 AT+CMGR=3 to read the third message
 
