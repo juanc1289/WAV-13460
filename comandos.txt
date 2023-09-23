@@ -10,8 +10,11 @@ ls -l /dev/t*
 sudo cat /dev/ttyS0
 
 ### GPS ###
-AT+CGNSINF 
+####turn ON
 AT+CGNSPWR=1
+####Request info####
+AT+CGNSINF 
+
 
 ### SMS ###
 ####Recibir#####

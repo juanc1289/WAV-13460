@@ -1,6 +1,8 @@
 import serial
 import time 
 
+#https://www.youtube.com/watch?v=XlnX9SPeerk&t=743s&ab_channel=INNOVADOMOTICS
+
 phone = serial.Serial("/dev/ttyS0", baudrate=115200, timeout=2.0)
 
 message='AT+CGNSPWR=1\r\n'
